@@ -1,0 +1,213 @@
+/* --------------------modal-backdrop------------- */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.modal-backdrop.is-hidden .modal {
+    transform: scale(1);
+}
+  
+.modal {
+    width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $button-filtr-font-active;
+    border-radius: 4px;
+}
+  
+.modal .close-sign {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: $button-filtr-font-active;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.modal .close-sign .svg-close {
+    fill: $header-logo-last-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .close-sign:hover {
+    border: 1px solid $accent-color;
+}
+  
+.modal .close-sign:hover .svg-close {
+  fill: $accent-color;
+}
+
+/* modal-form input */
+.modal-title {
+  color: $button-filtr-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  margin-bottom: 12px;
+}
+  .modal-form {
+  }
+  .input-line {
+    margin-bottom: 10px; 
+  }
+  .modal-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px;
+    padding-left: 42px;
+    font-size: 16px;
+    color: $title-text-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0;  /* вот то что меня сбивало и не окрашивало бордер в голубой */
+    cursor: pointer;
+    }
+  
+  .modal-input:hover, .modal-input:focus, 
+  .modal-input:focus-within, .modal-input:focus-visible  {
+    border-color: $accent-color;
+  }
+
+  .modal-textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    color: rgba(117, 117, 117, 0.5);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .modal-textarea:hover, .modal-textarea:focus, 
+  .modal-textarea:focus-within, .modal-textarea:focus-visible  {
+    border: 1px solid $accent-color;
+  }
+
+  .modal-label  {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: $primary-text-color;
+  }
+  
+  .input-wrapper {
+    position: relative;
+
+  }
+  
+  .input-wrapper input {
+    margin-bottom: 0;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $button-filtr-font;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-input:focus + .input-icon,
+  .modal-input:hover + .input-icon {
+    fill: $accent-color;
+  }
+
+  .check-line {
+    /* display: block; */
+    margin: 10px auto 0;
+  }
+  
+  .checkbox-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox-agree .icon-wrapper {
+    width: 16px;
+    height: 15px;
+    border: 1px solid $button-filtr-font;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox-agree .agree-icon {
+    fill: transparent;
+  }
+  
+  .check-line input:checked + .checkbox-agree .icon-wrapper {
+    background-color: $background-color-button;
+    border: none;
+  }
+  
+  .check-line input:checked + .checkbox-agree .agree-icon {
+    fill: #ffffff;
+  }
+  .agree-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: $primary-text-color;
+  }
+  .agree-contract {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: $accent-color;
+  }
+  .modal-button {
+    display: block;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: $hero-color;
+    background-color: $background-color-button;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 30px auto 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* маржин равнения */
+    cursor: pointer;
+   }
+
+   .modal-button:hover, .modal-button:active {
+    background-color: $button-bkg-mouse; 
+   }

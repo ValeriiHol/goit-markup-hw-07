@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="body">
@@ -26,12 +26,12 @@
           <a class="header-logo link logo-flex" href="./">Web<span class="header-logo-last">Studio</span></a>
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-list-link link active-link" href="./studio.html"
+              <a class="header-list-link link" href="./studio.html"
                 >Студія</a
               >
             </li>
             <li class="header-list-item">
-              <a class="header-list-link link" href="./portfolio.html">Портфоліо</a>
+              <a class="header-list-link link active-link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="header-list-item">
               <a class="header-list-link link" href="#">Контакти</a>
@@ -193,58 +193,69 @@
       <div class="footer-content container">
         <div class="">
           <a class="footer-logo link" href="./">Web<span class="footer-logo-last">Studio</span></a>
-          <address>
-            <ul class="list adress-list">
-              <li class="address-line">
-                <a class="footer-list-adress link" href="https://goo.gl/maps/aEc3qN7KsG8WqcRj8"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="address-line">
-                <a class="footer-list-mail link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address-line">
-                <a class="footer-list-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+        <address>
+        <ul class="list adress-list">
+          <li class="address-line">
+            <a class="footer-list-adress link" href="https://goo.gl/maps/aEc3qN7KsG8WqcRj8"
+              >м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="address-line">
+            <a class="footer-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-line"><a class="footer-list-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+        </address>
         </div>
         <div class="foot-social-net">
           <h3 class="join-title">приєднуйтесь</h3>
-          <ul class="social-icons list">
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#sn-instagram"></use>
+            <ul class="social-icons list">
+                <li class="social-item"><a href="" class="social-link link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#sn-instagram"></use>
+                  </svg>
+                </a></li>
+                <li class="social-item"><a href="" class="social-link link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#sn-twitter"></use>
+                  </svg>
+                </a></li>
+                <li class="social-item"><a href="" class="social-link link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#sn-facebook"></use>
+                  </svg>
+                </a></li>
+                <li class="social-item"><a href="" class="social-link link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#sn-linkedin"></use>
+                  </svg>
+                </a></li>
+            </ul>
+        </div>  
+
+        <div class="subscribe-section">
+          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <form class="input-form">
+            <div class="subscribe-button-div">
+              <input class="subscribe-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button class="subscribe-button" type="submit">
+                Підписатися
+                <svg class="svg-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#sn-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#sn-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#sn-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </div>
+          </form>
+
+          <!-- </div> -->
         </div>
+
       </div>
+      
     </footer>
   </body>
 </html>
