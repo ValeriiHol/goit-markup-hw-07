@@ -115,40 +115,41 @@
       text-transform: uppercase;
       margin-bottom: 20px;
     }
+    &__form {
+      display: flex;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      background-color: $background-color-fon;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;  
+      padding: 15px 16px;
+      color: $primary-text-color;
+      outline: 0;
+      }
+      &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      background-color: $accent-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      color: $button-filtr-font-active;
+      border-radius: 4px;
+      margin-left: 12px;
+      border: none;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      }
+      &__svg {
+      margin-left: 10px;
+      }
+    
   }
-// ---------------- здесь закончил 05-12-22
-  
-  .subscribe-input {
-    width: 358px;
-    height: 50px;
-    background-color: $background-color-fon;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;  
-    padding: 15px 16px;
-    color: $primary-text-color;
-    outline: 0;
-  }
-  .subscribe-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    background-color: $accent-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    color: $button-filtr-font-active;
-    border-radius: 4px;
-    margin-left: 12px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-  }
-  .svg-send {
-    margin-left: 10px;
-  }
-  .subscribe-button-div {
-    display: flex;
-  }
+
+
   

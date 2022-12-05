@@ -623,8 +623,12 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.subscribe-input {
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.subscribe__input {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
@@ -634,8 +638,7 @@ ul {
   color: #757575;
   outline: 0;
 }
-
-.subscribe-button {
+.subscribe__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,15 +662,8 @@ ul {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
-.svg-send {
+.subscribe__svg {
   margin-left: 10px;
-}
-
-.subscribe-button-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* portfolio menu */
